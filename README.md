@@ -26,7 +26,7 @@ python3 -m http.server 8000 --directory dist
 - `dist/index.html`：站点外壳与导航。
 - `dist/styles.css`：响应式视觉、移动端与打印样式。
 - `dist/app.js`：路由、实验室、答题进度、IndexedDB练习本、WebGL背景。
-- `dist/lessons.js`：15节课程、场景卡与官方资料链接；从这里维护内容。
+- `dist/lessons.js`：15节课程、场景卡与官方资料链接；从这里维护内容。每课除原有字段外，还可选填 `terms`（术语速查）、`concepts` 第三项（深入要点列表）、`tables`（对照表）和 `mistakes`（常见误区），格式见文件顶部注释。
 - `dist/assets/`：真实摄影图片、作者与许可证清单。
 - `.github/workflows/pages.yml`：GitHub Pages自动部署。
 

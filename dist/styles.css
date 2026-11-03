@@ -9,3 +9,25 @@
 
 .photo-stamp span{font-size:8px;letter-spacing:.3px;white-space:nowrap}
 @media(max-width:520px){.hero h1{font-size:clamp(30px,9.3vw,38px)}}
+
+/* Expanded lesson content: key terms, concept details, tables, common mistakes */
+.term-box{margin:22px 0 32px;padding:20px 22px;border:1px solid var(--line);border-radius:6px;background:#d0e7bd06}
+.term-box>small,.mistakes>small{display:block;font-size:10px;letter-spacing:1px;color:var(--accent);margin-bottom:12px}
+.term-box dl{display:grid;grid-template-columns:minmax(96px,max-content) 1fr;gap:10px 20px;margin:0}
+.term-box dt{font-size:13px;font-weight:500;color:var(--text);line-height:1.9}
+.term-box dd{margin:0;font-size:13px;line-height:1.9;color:#becbbf}
+.concept-points{margin:12px 0 0;padding:0 0 0 18px;list-style:none}
+.concept-points li{position:relative;font-size:13.5px;line-height:2;color:#b3c2b5;margin:6px 0}
+.concept-points li:before{content:'';position:absolute;left:-16px;top:1em;width:7px;height:1px;background:var(--gold)}
+.lesson-table{margin:28px 0;overflow-x:auto}
+.lesson-table figcaption{font-size:13px;color:var(--text);margin-bottom:2px}
+.lesson-table .lens-table{min-width:460px}
+.lesson-table .table-note{font-size:11px;color:var(--muted);line-height:1.8;margin:6px 0 0}
+.mistakes{margin:32px 0 8px;padding:20px 22px;border-left:2px solid var(--gold);background:#dfb7850a}
+.mistakes>small{color:var(--gold)}
+.mistake{margin:14px 0}
+.mistake p{font-size:13.5px;line-height:1.9;margin:0}
+.mistake .wrong{color:var(--muted)}
+.mistake .right{color:#d6e2d3}
+@media (max-width:640px){.term-box,.mistakes{padding:16px}.term-box dl{grid-template-columns:1fr;gap:0}.term-box dd{margin-bottom:12px}}
+@media print{.term-box dd,.concept-points li,.mistake p,.mistake .right{color:#333}.term-box dt{color:#000}}
